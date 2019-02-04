@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2353A48B9DC5C9DB6C356DE8 /* Pods_ViajaNetTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9DB52A83313FE1CD2AD80D /* Pods_ViajaNetTestTests.framework */; };
+		2D016ABB2208E57A008459AE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D016ABA2208E57A008459AE /* APIManager.swift */; };
 		2DFBE4C422055FCF00C44E7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFBE4C322055FCF00C44E7C /* AppDelegate.swift */; };
-		2DFBE4C622055FCF00C44E7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFBE4C522055FCF00C44E7C /* ViewController.swift */; };
 		2DFBE4C922055FCF00C44E7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DFBE4C722055FCF00C44E7C /* Main.storyboard */; };
 		2DFBE4CC22055FCF00C44E7C /* ViajaNetTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2DFBE4CA22055FCF00C44E7C /* ViajaNetTest.xcdatamodeld */; };
 		2DFBE4CE22055FD200C44E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DFBE4CD22055FD200C44E7C /* Assets.xcassets */; };
 		2DFBE4D122055FD200C44E7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DFBE4CF22055FD200C44E7C /* LaunchScreen.storyboard */; };
 		2DFBE4DC22055FD200C44E7C /* ViajaNetTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFBE4DB22055FD200C44E7C /* ViajaNetTestTests.swift */; };
 		2DFBE4E722055FD200C44E7C /* ViajaNetTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFBE4E622055FD200C44E7C /* ViajaNetTestUITests.swift */; };
+		9489E14CB9DBA69B8F466EC0 /* Pods_ViajaNetTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3164867810FCB0CA999C25C6 /* Pods_ViajaNetTest.framework */; };
+		DED0D98921474348F9577C9A /* Pods_ViajaNetTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F49D0FF26BCF215837A6D4 /* Pods_ViajaNetTestUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B48B6FF38869A4FE5AE5DD4 /* Pods-ViajaNetTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViajaNetTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViajaNetTest/Pods-ViajaNetTest.release.xcconfig"; sourceTree = "<group>"; };
+		2BBBC99E43720F82C07B7CAD /* Pods-ViajaNetTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViajaNetTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViajaNetTestTests/Pods-ViajaNetTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D016ABA2208E57A008459AE /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		2DFBE4C022055FCF00C44E7C /* ViajaNetTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViajaNetTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DFBE4C322055FCF00C44E7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2DFBE4C522055FCF00C44E7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2DFBE4C822055FCF00C44E7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2DFBE4CB22055FCF00C44E7C /* ViajaNetTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ViajaNetTest.xcdatamodel; sourceTree = "<group>"; };
 		2DFBE4CD22055FD200C44E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		2DFBE4E222055FD200C44E7C /* ViajaNetTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViajaNetTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DFBE4E622055FD200C44E7C /* ViajaNetTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViajaNetTestUITests.swift; sourceTree = "<group>"; };
 		2DFBE4E822055FD200C44E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3164867810FCB0CA999C25C6 /* Pods_ViajaNetTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViajaNetTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D7D15267B4A4FB7B1B7427 /* Pods-ViajaNetTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViajaNetTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViajaNetTestUITests/Pods-ViajaNetTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F6196541B29CB94B41EF908 /* Pods-ViajaNetTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViajaNetTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViajaNetTestUITests/Pods-ViajaNetTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CAA9AF52489F6C916E3A300E /* Pods-ViajaNetTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViajaNetTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViajaNetTest/Pods-ViajaNetTest.debug.xcconfig"; sourceTree = "<group>"; };
+		E5C37B33C7C808FA23C9CAAE /* Pods-ViajaNetTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViajaNetTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViajaNetTestTests/Pods-ViajaNetTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		F0F49D0FF26BCF215837A6D4 /* Pods_ViajaNetTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViajaNetTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB9DB52A83313FE1CD2AD80D /* Pods_ViajaNetTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViajaNetTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9489E14CB9DBA69B8F466EC0 /* Pods_ViajaNetTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2353A48B9DC5C9DB6C356DE8 /* Pods_ViajaNetTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,79 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DED0D98921474348F9577C9A /* Pods_ViajaNetTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21AE9F26FD2D37BBAA33D16B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3164867810FCB0CA999C25C6 /* Pods_ViajaNetTest.framework */,
+				FB9DB52A83313FE1CD2AD80D /* Pods_ViajaNetTestTests.framework */,
+				F0F49D0FF26BCF215837A6D4 /* Pods_ViajaNetTestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2DC168D622060D4B00F97D1A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2D016ABA2208E57A008459AE /* APIManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2DC168D722060D5300F97D1A /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				2DFBE4CA22055FCF00C44E7C /* ViajaNetTest.xcdatamodeld */,
+				2DFBE4D222055FD200C44E7C /* Info.plist */,
+				2DFBE4CD22055FD200C44E7C /* Assets.xcassets */,
+				2DFBE4C322055FCF00C44E7C /* AppDelegate.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		2DC168D822060D7200F97D1A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2DFBE4C722055FCF00C44E7C /* Main.storyboard */,
+				2DFBE4CF22055FD200C44E7C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2DC168D922060D8B00F97D1A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2DC168DA22060D9200F97D1A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2DC168DB22060DAD00F97D1A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2DC168DC22060DBC00F97D1A /* DAOs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DAOs;
+			sourceTree = "<group>";
+		};
 		2DFBE4B722055FCF00C44E7C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +164,8 @@
 				2DFBE4DA22055FD200C44E7C /* ViajaNetTestTests */,
 				2DFBE4E522055FD200C44E7C /* ViajaNetTestUITests */,
 				2DFBE4C122055FCF00C44E7C /* Products */,
+				560A2E8D5D776D92F9627C87 /* Pods */,
+				21AE9F26FD2D37BBAA33D16B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +182,13 @@
 		2DFBE4C222055FCF00C44E7C /* ViajaNetTest */ = {
 			isa = PBXGroup;
 			children = (
-				2DFBE4C322055FCF00C44E7C /* AppDelegate.swift */,
-				2DFBE4C522055FCF00C44E7C /* ViewController.swift */,
-				2DFBE4C722055FCF00C44E7C /* Main.storyboard */,
-				2DFBE4CD22055FD200C44E7C /* Assets.xcassets */,
-				2DFBE4CF22055FD200C44E7C /* LaunchScreen.storyboard */,
-				2DFBE4D222055FD200C44E7C /* Info.plist */,
-				2DFBE4CA22055FCF00C44E7C /* ViajaNetTest.xcdatamodeld */,
+				2DC168DC22060DBC00F97D1A /* DAOs */,
+				2DC168D922060D8B00F97D1A /* Models */,
+				2DC168DA22060D9200F97D1A /* ViewControllers */,
+				2DC168DB22060DAD00F97D1A /* ViewModels */,
+				2DC168D822060D7200F97D1A /* Storyboards */,
+				2DC168D722060D5300F97D1A /* Supporting files */,
+				2DC168D622060D4B00F97D1A /* Service */,
 			);
 			path = ViajaNetTest;
 			sourceTree = "<group>";
@@ -128,6 +211,19 @@
 			path = ViajaNetTestUITests;
 			sourceTree = "<group>";
 		};
+		560A2E8D5D776D92F9627C87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAA9AF52489F6C916E3A300E /* Pods-ViajaNetTest.debug.xcconfig */,
+				1B48B6FF38869A4FE5AE5DD4 /* Pods-ViajaNetTest.release.xcconfig */,
+				2BBBC99E43720F82C07B7CAD /* Pods-ViajaNetTestTests.debug.xcconfig */,
+				E5C37B33C7C808FA23C9CAAE /* Pods-ViajaNetTestTests.release.xcconfig */,
+				68D7D15267B4A4FB7B1B7427 /* Pods-ViajaNetTestUITests.debug.xcconfig */,
+				7F6196541B29CB94B41EF908 /* Pods-ViajaNetTestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DFBE4EB22055FD200C44E7C /* Build configuration list for PBXNativeTarget "ViajaNetTest" */;
 			buildPhases = (
+				57CC5DCEF5F2B62615B3D8C3 /* [CP] Check Pods Manifest.lock */,
 				2DFBE4BC22055FCF00C44E7C /* Sources */,
 				2DFBE4BD22055FCF00C44E7C /* Frameworks */,
 				2DFBE4BE22055FCF00C44E7C /* Resources */,
+				C8354BC0E7062389298AA8D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +250,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DFBE4EE22055FD200C44E7C /* Build configuration list for PBXNativeTarget "ViajaNetTestTests" */;
 			buildPhases = (
+				D7C045FD196CEB23898E61BE /* [CP] Check Pods Manifest.lock */,
 				2DFBE4D322055FD200C44E7C /* Sources */,
 				2DFBE4D422055FD200C44E7C /* Frameworks */,
 				2DFBE4D522055FD200C44E7C /* Resources */,
@@ -170,6 +269,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DFBE4F122055FD200C44E7C /* Build configuration list for PBXNativeTarget "ViajaNetTestUITests" */;
 			buildPhases = (
+				C9AC8197C40FF0538F25D0E8 /* [CP] Check Pods Manifest.lock */,
 				2DFBE4DE22055FD200C44E7C /* Sources */,
 				2DFBE4DF22055FD200C44E7C /* Frameworks */,
 				2DFBE4E022055FD200C44E7C /* Resources */,
@@ -254,13 +354,104 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		57CC5DCEF5F2B62615B3D8C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViajaNetTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8354BC0E7062389298AA8D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ViajaNetTest/Pods-ViajaNetTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViajaNetTest/Pods-ViajaNetTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9AC8197C40FF0538F25D0E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViajaNetTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7C045FD196CEB23898E61BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViajaNetTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2DFBE4BC22055FCF00C44E7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D016ABB2208E57A008459AE /* APIManager.swift in Sources */,
 				2DFBE4CC22055FCF00C44E7C /* ViajaNetTest.xcdatamodeld in Sources */,
-				2DFBE4C622055FCF00C44E7C /* ViewController.swift in Sources */,
 				2DFBE4C422055FCF00C44E7C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,11 +625,12 @@
 		};
 		2DFBE4EC22055FD200C44E7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAA9AF52489F6C916E3A300E /* Pods-ViajaNetTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8UJX898RF;
-				INFOPLIST_FILE = ViajaNetTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ViajaNetTest/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,11 +644,12 @@
 		};
 		2DFBE4ED22055FD200C44E7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B48B6FF38869A4FE5AE5DD4 /* Pods-ViajaNetTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8UJX898RF;
-				INFOPLIST_FILE = ViajaNetTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ViajaNetTest/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,6 +663,7 @@
 		};
 		2DFBE4EF22055FD200C44E7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BBBC99E43720F82C07B7CAD /* Pods-ViajaNetTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +685,7 @@
 		};
 		2DFBE4F022055FD200C44E7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5C37B33C7C808FA23C9CAAE /* Pods-ViajaNetTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +707,7 @@
 		};
 		2DFBE4F222055FD200C44E7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68D7D15267B4A4FB7B1B7427 /* Pods-ViajaNetTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +728,7 @@
 		};
 		2DFBE4F322055FD200C44E7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F6196541B29CB94B41EF908 /* Pods-ViajaNetTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

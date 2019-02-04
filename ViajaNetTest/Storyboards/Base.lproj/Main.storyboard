@@ -112,11 +112,11 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FzE-SL-TNy">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FzE-SL-TNy">
                                 <rect key="frame" x="0.0" y="62" width="375" height="605"/>
                                 <subviews>
-                                    <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qCd-GW-GGl">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="605"/>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCd-GW-GGl">
+                                        <rect key="frame" x="0.0" y="0.0" width="168" height="605"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="aeroporto ou cidade" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xPF-WU-k1x">
                                                 <rect key="frame" x="8" y="10" width="152" height="30"/>
@@ -144,7 +144,7 @@
                                                     <constraint firstAttribute="height" constant="41" id="VKT-UK-dkN"/>
                                                 </constraints>
                                             </view>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uxv-dW-EFJ">
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uxv-dW-EFJ">
                                                 <rect key="frame" x="0.0" y="91" width="168" height="514"/>
                                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </tableView>
@@ -196,10 +196,13 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="qCd-GW-GGl" firstAttribute="top" secondItem="FzE-SL-TNy" secondAttribute="top" id="1ru-Rf-aZK"/>
                                     <constraint firstItem="2zO-LV-qyZ" firstAttribute="leading" secondItem="FzE-SL-TNy" secondAttribute="leading" constant="8" id="3PR-Ud-If3"/>
+                                    <constraint firstItem="qCd-GW-GGl" firstAttribute="bottom" secondItem="ehZ-RZ-OXi" secondAttribute="bottom" id="AEG-0o-WfX"/>
                                     <constraint firstAttribute="trailing" secondItem="2zO-LV-qyZ" secondAttribute="trailing" constant="8" id="FXT-dF-Uwg"/>
                                     <constraint firstItem="ehZ-RZ-OXi" firstAttribute="top" secondItem="nLD-eK-inY" secondAttribute="bottom" constant="2" id="FmY-uF-Y8x"/>
                                     <constraint firstItem="nLD-eK-inY" firstAttribute="leading" secondItem="FzE-SL-TNy" secondAttribute="leading" constant="10" id="NVs-NH-TTJ"/>
+                                    <constraint firstItem="qCd-GW-GGl" firstAttribute="leading" secondItem="ehZ-RZ-OXi" secondAttribute="leading" id="SRC-MU-ZR9"/>
                                     <constraint firstAttribute="trailing" secondItem="ehZ-RZ-OXi" secondAttribute="trailing" id="T0r-6C-irr"/>
                                     <constraint firstItem="2zO-LV-qyZ" firstAttribute="top" secondItem="FzE-SL-TNy" secondAttribute="top" constant="10" id="ZuZ-Ty-Wyj"/>
                                     <constraint firstAttribute="trailing" secondItem="nLD-eK-inY" secondAttribute="trailing" constant="8" id="fHK-wM-BP2"/>
