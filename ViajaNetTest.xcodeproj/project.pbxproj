@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		2353A48B9DC5C9DB6C356DE8 /* Pods_ViajaNetTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9DB52A83313FE1CD2AD80D /* Pods_ViajaNetTestTests.framework */; };
 		2D016ABB2208E57A008459AE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D016ABA2208E57A008459AE /* APIManager.swift */; };
+		2D016ABD2208EA53008459AE /* SearchAirportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D016ABC2208EA53008459AE /* SearchAirportsViewController.swift */; };
+		2D016ABF22090F22008459AE /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D016ABE22090F22008459AE /* Airport.swift */; };
+		2D016AC1220A5FE2008459AE /* FilterAirportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D016AC0220A5FE2008459AE /* FilterAirportsViewController.swift */; };
+		2D016AC4220B781F008459AE /* SearchAiportsViewController+SearchAiportsViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D016AC3220B781F008459AE /* SearchAiportsViewController+SearchAiportsViewDelegate.swift */; };
+		2D016AC6220B7BE5008459AE /* FilterAiportsViewController + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D016AC5220B7BE5008459AE /* FilterAiportsViewController + TableView.swift */; };
+		2D016AC8220CDA42008459AE /* FilterAiportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D016AC7220CDA42008459AE /* FilterAiportsViewModel.swift */; };
 		2DFBE4C422055FCF00C44E7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFBE4C322055FCF00C44E7C /* AppDelegate.swift */; };
 		2DFBE4C922055FCF00C44E7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DFBE4C722055FCF00C44E7C /* Main.storyboard */; };
 		2DFBE4CC22055FCF00C44E7C /* ViajaNetTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2DFBE4CA22055FCF00C44E7C /* ViajaNetTest.xcdatamodeld */; };
@@ -41,6 +47,12 @@
 		1B48B6FF38869A4FE5AE5DD4 /* Pods-ViajaNetTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViajaNetTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViajaNetTest/Pods-ViajaNetTest.release.xcconfig"; sourceTree = "<group>"; };
 		2BBBC99E43720F82C07B7CAD /* Pods-ViajaNetTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViajaNetTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViajaNetTestTests/Pods-ViajaNetTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D016ABA2208E57A008459AE /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		2D016ABC2208EA53008459AE /* SearchAirportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAirportsViewController.swift; sourceTree = "<group>"; };
+		2D016ABE22090F22008459AE /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		2D016AC0220A5FE2008459AE /* FilterAirportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterAirportsViewController.swift; sourceTree = "<group>"; };
+		2D016AC3220B781F008459AE /* SearchAiportsViewController+SearchAiportsViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchAiportsViewController+SearchAiportsViewDelegate.swift"; sourceTree = "<group>"; };
+		2D016AC5220B7BE5008459AE /* FilterAiportsViewController + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilterAiportsViewController + TableView.swift"; sourceTree = "<group>"; };
+		2D016AC7220CDA42008459AE /* FilterAiportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterAiportsViewModel.swift; sourceTree = "<group>"; };
 		2DFBE4C022055FCF00C44E7C /* ViajaNetTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViajaNetTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DFBE4C322055FCF00C44E7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DFBE4C822055FCF00C44E7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,6 +113,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2D016AC9220CDF3E008459AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2DC168D622060D4B00F97D1A /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +151,7 @@
 		2DC168D922060D8B00F97D1A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2D016ABE22090F22008459AE /* Airport.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -139,6 +159,10 @@
 		2DC168DA22060D9200F97D1A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2D016ABC2208EA53008459AE /* SearchAirportsViewController.swift */,
+				2D016AC3220B781F008459AE /* SearchAiportsViewController+SearchAiportsViewDelegate.swift */,
+				2D016AC0220A5FE2008459AE /* FilterAirportsViewController.swift */,
+				2D016AC5220B7BE5008459AE /* FilterAiportsViewController + TableView.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -146,6 +170,7 @@
 		2DC168DB22060DAD00F97D1A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				2D016AC7220CDA42008459AE /* FilterAiportsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -182,6 +207,7 @@
 		2DFBE4C222055FCF00C44E7C /* ViajaNetTest */ = {
 			isa = PBXGroup;
 			children = (
+				2D016AC9220CDF3E008459AE /* Views */,
 				2DC168DC22060DBC00F97D1A /* DAOs */,
 				2DC168D922060D8B00F97D1A /* Models */,
 				2DC168DA22060D9200F97D1A /* ViewControllers */,
@@ -450,9 +476,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D016AC1220A5FE2008459AE /* FilterAirportsViewController.swift in Sources */,
+				2D016ABF22090F22008459AE /* Airport.swift in Sources */,
 				2D016ABB2208E57A008459AE /* APIManager.swift in Sources */,
 				2DFBE4CC22055FCF00C44E7C /* ViajaNetTest.xcdatamodeld in Sources */,
+				2D016ABD2208EA53008459AE /* SearchAirportsViewController.swift in Sources */,
+				2D016AC6220B7BE5008459AE /* FilterAiportsViewController + TableView.swift in Sources */,
+				2D016AC8220CDA42008459AE /* FilterAiportsViewModel.swift in Sources */,
 				2DFBE4C422055FCF00C44E7C /* AppDelegate.swift in Sources */,
+				2D016AC4220B781F008459AE /* SearchAiportsViewController+SearchAiportsViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

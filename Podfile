@@ -6,6 +6,8 @@ target 'ViajaNetTest' do
   use_frameworks!
 
   pod 'Alamofire', '~> 4.7'
+  pod 'XMLParsing', :git => 'https://github.com/ShawnMoore/XMLParsing.git'
+
 
 
   target 'ViajaNetTestTests' do
