@@ -29,6 +29,12 @@ struct Airport: Codable {
     var id: Int
     var name: String
     var city: String
+    
+    init(id:Int, name:String, city:String) {
+        self.id = id
+        self.name = name
+        self.city = city
+    }
 }
 
 

@@ -11,9 +11,11 @@ import UIKit
 class FilterAirportsViewController: UIViewController {
 
     //Variables
-    var searchAiportsViewDelete: SearchAiportsViewDelegate?
+    var searchAiportsViewDelegate: SearchAiportsViewDelegate?
     var titleView = ""
     var viewModel: FilterAiportsViewModel?
+    var activityIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
+
     //outlets
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -23,13 +25,13 @@ class FilterAirportsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.titleLabel.text = titleView
-        self.viewModel = FilterAiportsViewModel()
-        self.steptableView()
+        self.viewModel = FilterAiportsViewModel(view:self)
+        self.setupTableview()
+        self.setupSearchBar()
     }
     
-    func steptableView() {
-        tableView.delegate = self
-        tableView.dataSource = self
+    @IBAction func buttonCloseFilterView(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
 }

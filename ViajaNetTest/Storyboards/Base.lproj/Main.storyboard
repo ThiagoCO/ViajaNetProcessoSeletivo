@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="63"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comprar Passagens Aéreas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1IO-Ms-sJ4">
-                                        <rect key="frame" x="64" y="25" width="258" height="24"/>
+                                        <rect key="frame" x="64" y="33" width="258" height="24"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -30,8 +30,8 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="1IO-Ms-sJ4" secondAttribute="trailing" constant="53" id="0MY-Sg-zrT"/>
-                                    <constraint firstAttribute="bottom" secondItem="1IO-Ms-sJ4" secondAttribute="bottom" constant="14" id="6qH-xz-oZH"/>
-                                    <constraint firstItem="1IO-Ms-sJ4" firstAttribute="top" secondItem="Nqf-dZ-pD7" secondAttribute="top" constant="25" id="wwx-hR-mY4"/>
+                                    <constraint firstAttribute="bottom" secondItem="1IO-Ms-sJ4" secondAttribute="bottom" constant="6" id="6qH-xz-oZH"/>
+                                    <constraint firstItem="1IO-Ms-sJ4" firstAttribute="top" secondItem="Nqf-dZ-pD7" secondAttribute="top" constant="33" id="wwx-hR-mY4"/>
                                     <constraint firstAttribute="height" constant="63" id="z3R-2X-Hsu"/>
                                 </constraints>
                             </view>
@@ -65,12 +65,18 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="TextFieldDatePickerView:" destination="4aN-Q2-UXl" eventType="editingDidBegin" id="5JC-4A-hwe"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Volta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5zY-2T-00e">
                                 <rect key="frame" x="191" y="231" width="170" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="TextFieldDatePickerView:" destination="4aN-Q2-UXl" eventType="editingDidBegin" id="ULD-Cs-3kd"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfU-4z-NdG">
                                 <rect key="frame" x="13" y="306" width="348" height="40"/>
@@ -79,6 +85,9 @@
                                 <state key="normal" title="Procurar Voos">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonSearchPassages:" destination="4aN-Q2-UXl" eventType="touchUpInside" id="wkX-yc-M1i"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Se-mY-T5b">
                                 <rect key="frame" x="12" y="113" width="345" height="30"/>
@@ -133,6 +142,8 @@
                         <viewLayoutGuide key="safeArea" id="fzN-2p-YF0"/>
                     </view>
                     <connections>
+                        <outlet property="TextFieldDateRounds" destination="5zY-2T-00e" id="otL-Ol-Wr5"/>
+                        <outlet property="TextFieldDateTrip" destination="vXt-QQ-PQC" id="kkM-Qp-afJ"/>
                         <outlet property="buttonCityDestinyLayer" destination="3oY-Gw-Me0" id="z84-0x-a79"/>
                         <outlet property="buttonCityOriginLayer" destination="6Se-mY-T5b" id="v9p-BN-ecv"/>
                     </connections>
@@ -158,13 +169,24 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPU-1X-4G1">
+                                        <rect key="frame" x="8" y="27" width="30" height="37"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                        <state key="normal" title="X"/>
+                                        <connections>
+                                            <action selector="buttonCloseFilterView:" destination="wGG-oT-25D" eventType="touchUpInside" id="kx6-tF-mvO"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="XPU-1X-4G1" firstAttribute="top" secondItem="JGg-AX-RIe" secondAttribute="top" constant="27" id="1ui-jK-L7K"/>
                                     <constraint firstAttribute="bottom" secondItem="MwQ-Ef-F50" secondAttribute="bottom" constant="4" id="6yN-lj-T8Z"/>
                                     <constraint firstAttribute="trailing" secondItem="MwQ-Ef-F50" secondAttribute="trailing" constant="59" id="LbW-Uc-BRc"/>
+                                    <constraint firstAttribute="bottom" secondItem="XPU-1X-4G1" secondAttribute="bottom" id="czX-uM-BZe"/>
                                     <constraint firstAttribute="height" constant="64" id="esd-TW-KA6"/>
                                     <constraint firstItem="MwQ-Ef-F50" firstAttribute="leading" secondItem="JGg-AX-RIe" secondAttribute="leading" constant="58" id="r3L-OZ-wDB"/>
+                                    <constraint firstItem="XPU-1X-4G1" firstAttribute="leading" secondItem="JGg-AX-RIe" secondAttribute="leading" constant="8" id="wmK-PS-RR7"/>
                                 </constraints>
                             </view>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="mP9-7M-lBD">

@@ -10,8 +10,14 @@ import UIKit
 
 extension FilterAirportsViewController: UITableViewDelegate, UITableViewDataSource {
     
+    
+    func setupTableview() {
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (viewModel?.aiportsList?.count ?? 1000)
+        return ((viewModel?.aiportsList?.count ?? 0) + 1)
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -20,12 +26,29 @@ extension FilterAirportsViewController: UITableViewDelegate, UITableViewDataSour
       //  cell.accessoryType = .disclosureIndicator
         cell.selectionStyle = .none
         cell.backgroundColor = tableView.backgroundColor
-         self.tableView.rowHeight = 80
-        cell.textLabel?.text = viewModel?.aiportsList?[indexPath.row].name
+        if(indexPath.row == 0) {
+            cell.textLabel?.text = "        Lista de aeroportos encontrados:"
+        }
+        else {
+            self.tableView.rowHeight = 80
+            cell.textLabel?.text = viewModel?.aiportsList?[indexPath.row - 1].name
+            cell.textLabel?.numberOfLines = 2
+            cell.textLabel?.textColor = UIColor(displayP3Red: 0, green: 0, blue: 1, alpha: 1)
         
-        
+        }
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if(titleLabel.text == "Destino") {
+            searchAiportsViewDelegate?.setTextDestiny(destiny: viewModel?.aiportsList?[indexPath.row].name ?? "Erro ao processar aeroporto")
+        }
+        else {
+            searchAiportsViewDelegate?.setTextOrigin(origin: viewModel?.aiportsList?[indexPath.row].name ?? "Erro ao processar aeroporto")
+        }
+        dismiss(animated: true, completion: nil)
+    }
+    
     
     
     

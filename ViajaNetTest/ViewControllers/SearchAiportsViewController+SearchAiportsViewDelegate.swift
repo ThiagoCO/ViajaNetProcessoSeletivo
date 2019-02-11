@@ -21,6 +21,6 @@ extension SearchAirportsViewController : SearchAiportsViewDelegate {
     }
     
     func setTextOrigin(origin: String) {
-        buttonCityDestinyLayer.setTitle(origin, for: .normal)
+        buttonCityOriginLayer.setTitle(origin, for: .normal)
     }
 }
