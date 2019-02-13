@@ -13,8 +13,9 @@
 		2D016ABF22090F22008459AE /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D016ABE22090F22008459AE /* Airport.swift */; };
 		2D016AC1220A5FE2008459AE /* FilterAirportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D016AC0220A5FE2008459AE /* FilterAirportsViewController.swift */; };
 		2D016AC4220B781F008459AE /* SearchAiportsViewController+SearchAiportsViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D016AC3220B781F008459AE /* SearchAiportsViewController+SearchAiportsViewDelegate.swift */; };
-		2D016AC6220B7BE5008459AE /* FilterAiportsViewController + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D016AC5220B7BE5008459AE /* FilterAiportsViewController + TableView.swift */; };
+		2D016AC6220B7BE5008459AE /* FilterAiportsViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D016AC5220B7BE5008459AE /* FilterAiportsViewController+TableView.swift */; };
 		2D016AC8220CDA42008459AE /* FilterAiportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D016AC7220CDA42008459AE /* FilterAiportsViewModel.swift */; };
+		2D88462022136FA300B9F77E /* Data+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D88461F22136FA300B9F77E /* Data+Codable.swift */; };
 		2D9F418B220F48F20044887D /* FilterAiportsViewController+SearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F418A220F48F20044887D /* FilterAiportsViewController+SearchBarDelegate.swift */; };
 		2DF866F6220F513B00B0391F /* FilterAiportsViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF866F5220F513B00B0391F /* FilterAiportsViewDelegate.swift */; };
 		2DFBE4C422055FCF00C44E7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFBE4C322055FCF00C44E7C /* AppDelegate.swift */; };
@@ -53,8 +54,9 @@
 		2D016ABE22090F22008459AE /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		2D016AC0220A5FE2008459AE /* FilterAirportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterAirportsViewController.swift; sourceTree = "<group>"; };
 		2D016AC3220B781F008459AE /* SearchAiportsViewController+SearchAiportsViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchAiportsViewController+SearchAiportsViewDelegate.swift"; sourceTree = "<group>"; };
-		2D016AC5220B7BE5008459AE /* FilterAiportsViewController + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilterAiportsViewController + TableView.swift"; sourceTree = "<group>"; };
+		2D016AC5220B7BE5008459AE /* FilterAiportsViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilterAiportsViewController+TableView.swift"; sourceTree = "<group>"; };
 		2D016AC7220CDA42008459AE /* FilterAiportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterAiportsViewModel.swift; sourceTree = "<group>"; };
+		2D88461F22136FA300B9F77E /* Data+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Codable.swift"; sourceTree = "<group>"; };
 		2D9F418A220F48F20044887D /* FilterAiportsViewController+SearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilterAiportsViewController+SearchBarDelegate.swift"; sourceTree = "<group>"; };
 		2DF866F5220F513B00B0391F /* FilterAiportsViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterAiportsViewDelegate.swift; sourceTree = "<group>"; };
 		2DFBE4C022055FCF00C44E7C /* ViajaNetTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViajaNetTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +126,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		2D88461E22136F5400B9F77E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2D88461F22136FA300B9F77E /* Data+Codable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		2DC168D622060D4B00F97D1A /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,7 +176,7 @@
 				2D016ABC2208EA53008459AE /* SearchAirportsViewController.swift */,
 				2D016AC3220B781F008459AE /* SearchAiportsViewController+SearchAiportsViewDelegate.swift */,
 				2D016AC0220A5FE2008459AE /* FilterAirportsViewController.swift */,
-				2D016AC5220B7BE5008459AE /* FilterAiportsViewController + TableView.swift */,
+				2D016AC5220B7BE5008459AE /* FilterAiportsViewController+TableView.swift */,
 				2D9F418A220F48F20044887D /* FilterAiportsViewController+SearchBarDelegate.swift */,
 				2DF866F5220F513B00B0391F /* FilterAiportsViewDelegate.swift */,
 			);
@@ -221,6 +231,7 @@
 				2DC168D822060D7200F97D1A /* Storyboards */,
 				2DC168D722060D5300F97D1A /* Supporting files */,
 				2DC168D622060D4B00F97D1A /* Service */,
+				2D88461E22136F5400B9F77E /* Extensions */,
 			);
 			path = ViajaNetTest;
 			sourceTree = "<group>";
@@ -486,9 +497,10 @@
 				2D016ABF22090F22008459AE /* Airport.swift in Sources */,
 				2D9F418B220F48F20044887D /* FilterAiportsViewController+SearchBarDelegate.swift in Sources */,
 				2D016ABB2208E57A008459AE /* APIManager.swift in Sources */,
+				2D88462022136FA300B9F77E /* Data+Codable.swift in Sources */,
 				2DFBE4CC22055FCF00C44E7C /* ViajaNetTest.xcdatamodeld in Sources */,
 				2D016ABD2208EA53008459AE /* SearchAirportsViewController.swift in Sources */,
-				2D016AC6220B7BE5008459AE /* FilterAiportsViewController + TableView.swift in Sources */,
+				2D016AC6220B7BE5008459AE /* FilterAiportsViewController+TableView.swift in Sources */,
 				2DF866F6220F513B00B0391F /* FilterAiportsViewDelegate.swift in Sources */,
 				2D016AC8220CDA42008459AE /* FilterAiportsViewModel.swift in Sources */,
 				2DFBE4C422055FCF00C44E7C /* AppDelegate.swift in Sources */,

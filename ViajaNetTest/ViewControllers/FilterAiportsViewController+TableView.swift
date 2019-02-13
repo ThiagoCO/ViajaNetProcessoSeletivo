@@ -41,10 +41,10 @@ extension FilterAirportsViewController: UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if(titleLabel.text == "Destino") {
-            searchAiportsViewDelegate?.setTextDestiny(destiny: viewModel?.aiportsList?[indexPath.row].name ?? "Erro ao processar aeroporto")
+            searchAiportsViewDelegate?.setTextDestination(destination: viewModel?.aiportsList?[indexPath.row - 1].name ?? "Erro ao processar aeroporto")
         }
         else {
-            searchAiportsViewDelegate?.setTextOrigin(origin: viewModel?.aiportsList?[indexPath.row].name ?? "Erro ao processar aeroporto")
+            searchAiportsViewDelegate?.setTextOrigin(origin: viewModel?.aiportsList?[indexPath.row-1].name ?? "Erro ao processar aeroporto")
         }
         dismiss(animated: true, completion: nil)
     }

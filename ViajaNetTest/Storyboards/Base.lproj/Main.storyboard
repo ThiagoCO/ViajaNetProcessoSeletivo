@@ -144,7 +144,7 @@
                     <connections>
                         <outlet property="TextFieldDateRounds" destination="5zY-2T-00e" id="otL-Ol-Wr5"/>
                         <outlet property="TextFieldDateTrip" destination="vXt-QQ-PQC" id="kkM-Qp-afJ"/>
-                        <outlet property="buttonCityDestinyLayer" destination="3oY-Gw-Me0" id="z84-0x-a79"/>
+                        <outlet property="buttonCityDestinationLayer" destination="3oY-Gw-Me0" id="z84-0x-a79"/>
                         <outlet property="buttonCityOriginLayer" destination="6Se-mY-T5b" id="v9p-BN-ecv"/>
                     </connections>
                 </viewController>

@@ -22,15 +22,12 @@ class FilterAiportsViewModel {
         view.startLoad()
         let text = textFilter.replacingOccurrences(of: " ", with: "%20", options: .literal, range: nil)
         APIManager.shared.getAirports(text: text) { (aiportList) in
+            self.view.stopLoad()
+            self.view.reloadTableView()
             if let  aiports = aiportList?.aiports {
                 self.aiportsList = aiports
-                self.view.stopLoad()
-                self.view.reloadTableView()
-            }
-            else {
+            } else {
                 self.aiportsList?.append(Airport(id: 2, name: "Nenhum Aeroporto encontrado", city: ""))
-                self.view.stopLoad()
-                self.view.reloadTableView()
             }
         }
     }

@@ -9,13 +9,13 @@
 import Foundation
 
 
-struct AiportList : Codable {
+struct AirportList: Codable {
     
     enum CodingKeys: String, CodingKey {
         case aiports = "Locations"
     }
     
-    var aiports : [Airport]
+    var aiports: [Airport]
     
 }
 

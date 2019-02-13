@@ -14,7 +14,7 @@ class SearchAirportsViewController: UIViewController {
     @IBOutlet weak var buttonCityOriginLayer: UIButton!
     
     @IBOutlet weak var TextFieldDateRounds: UITextField!
-    @IBOutlet weak var buttonCityDestinyLayer: UIButton!
+    @IBOutlet weak var buttonCityDestinationLayer: UIButton!
     
     
     @IBOutlet weak var TextFieldDateTrip: UITextField!
@@ -45,7 +45,7 @@ class SearchAirportsViewController: UIViewController {
     func setupButtonLayer() {
         buttonCityOriginLayer.layer.cornerRadius = 5
         buttonCityOriginLayer.layer.masksToBounds = true
-        buttonCityDestinyLayer.layer.cornerRadius = 5
+        buttonCityDestinationLayer.layer.cornerRadius = 5
         buttonCityOriginLayer.layer.masksToBounds = true
     }
    

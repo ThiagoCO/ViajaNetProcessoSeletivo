@@ -9,15 +9,15 @@
 import UIKit
 
 protocol SearchAiportsViewDelegate {
-    func setTextDestiny(destiny:String)
+    func setTextDestination(destination:String)
     func setTextOrigin(origin:String)
 }
 
 
 extension SearchAirportsViewController : SearchAiportsViewDelegate {
    
-    func setTextDestiny(destiny: String) {
-        buttonCityDestinyLayer.setTitle(destiny, for: .normal)
+    func setTextDestination(destination: String) {
+        buttonCityDestinationLayer.setTitle(destination, for: .normal)
     }
     
     func setTextOrigin(origin: String) {
